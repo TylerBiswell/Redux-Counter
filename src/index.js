@@ -18,8 +18,9 @@ const store = createStore(counter);
 // is passing its state to. The Provider component is also
 // where the store "lives".
 ReactDOM.render(
-  <Provider store={store}>
-    <Counter count="5" />
-  </Provider>,
+  <div>
+    <Counter store={store} />
+  </div>,
   document.getElementById("root")
-);
+ );
+
